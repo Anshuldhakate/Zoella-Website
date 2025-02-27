@@ -486,7 +486,7 @@
 /* Brands Section */
 .brands-section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
   background: #f8f9fa;
 }
 
@@ -1065,3 +1065,13 @@
     }
   }
   
+
+
+  /* Custom HR Line */
+.line {
+  width: 100%;
+  height: 1px; /* Adjust height */
+  background: linear-gradient(to right, transparent, #080808 50%, transparent);
+  border: none;
+  margin: 50px 0;
+}

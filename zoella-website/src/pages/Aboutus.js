@@ -115,7 +115,7 @@ const About = () => {
       <section className="about-cta">
         <h2>Ready to Work With Us?</h2>
         <p>Join hands with Zoella and experience the best in industrial solutions and gifting.</p>
-        <Link to="/contact" className="btn">Get in Touch</Link>
+        <Link to="/contact" className="btnabout">Get in Touch</Link>
       </section>
     </div>
   );

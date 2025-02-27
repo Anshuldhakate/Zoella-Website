@@ -237,7 +237,7 @@ const Home = () => {
         </div>
       </section>
 
-
+<hr className='line' />
 
       <section className="brands-section">
       <h2>Brands We Deal With</h2>
@@ -251,7 +251,7 @@ const Home = () => {
     </section>
 
 
-
+<hr className='line'/>
 
 
       {/* Our Values & Strengths Section */}

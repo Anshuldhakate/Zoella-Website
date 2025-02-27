@@ -1,0 +1,739 @@
+/* Hero Section */
+.hero-container {
+    background-image: url("../images/gifting/herogift.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 60px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-contents {
+    position: relative;
+    z-index: 2;
+    text-align: start;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .brand-name {
+    color: #ffd700;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  .tagline p {
+    font-size: 1.3rem;
+    font-style: italic;
+    background: white;
+    color: black;
+    padding: 5px 15px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .hero-contents button{
+    background-color: #ffd700;
+    padding: 10px 18px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+  .hero-contents button:hover{
+    background-color: #fef6c8;
+  }
+
+
+
+
+
+
+  /* Gifting Section Container */
+.gifting-container {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #d9e9ff, white);
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .gifting-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .gifting-title span {
+    color: #e67e22;
+  }
+  
+  /* Flexbox Layout */
+  .gifting-text {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Image Container */
+  .gifting-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .gifting-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* List of Gifting Items */
+  .gifting-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* max-width: 450px; */
+    text-align: left;
+    
+    /* padding: 20px; */
+  }
+  
+  .gifting-item {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    width: 85%;
+    gap: 20px;
+    border-radius: 10px;
+    border-left: 20px solid #010154;
+    border-right: 20px solid #010154;
+    /* margin-bottom: 15px; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  
+  /* Icon Styling */
+  .gifting-icon {
+    font-size: 3rem;
+    margin-right: 15px;
+  }
+
+  #gift2{
+    margin-left: 60px;
+  }
+  #gift4{
+    margin-left: 60px;
+  }
+  
+  /* Text Styling */
+  .gifting-text {
+    flex: 1;
+  }
+  
+  .gift-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px;
+  }
+  
+  .gift-description {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .gifting-text {
+      flex-direction: column;
+    }
+  
+    .gifting-image {
+      width: 250px;
+    }
+  
+    .gifting-list {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .gifting-item {
+      justify-content: center;
+      text-align: left;
+    }
+  }
+
+
+
+ 
+ 
+  
+
+
+  
+
+  .why-choose-us {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Tilt Animation */
+@keyframes tiltSwing {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    75% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Applying the tilt animation */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    font-size: 1.5rem;
+    color: #444;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transform-origin: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    
+    /* Continuous tilt motion */
+    animation: tiltSwing 5s ease-in-out infinite;
+    animation-delay: var(--delay);
+}
+
+/* Staggered animation delays to create a more natural effect */
+.card:nth-child(1) { --delay: 0s; }
+.card:nth-child(2) { --delay: 0.5s; }
+.card:nth-child(3) { --delay: 1s; }
+.card:nth-child(4) { --delay: 1.5s; }
+.card:nth-child(5) { --delay: 2s; }
+
+/* Hover Effect: Scale & Glow */
+.card:hover {
+    transform: scale(1.08) rotate(0deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 150, 255, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+
+
+
+/* Section Styling */
+.brands-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+/* Title */
+.brands-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Brand Cards Wrapper */
+.brand-cards {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* Brand Card */
+.brand-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Brand Logo */
+.brand-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Brand Name */
+.brandName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-top: 10px;
+}
+
+/* Brand Description */
+.brand-description {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 90%;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ff6600;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.prev-btn {
+  left: 100px;
+  font-size: 3rem;
+}
+
+.next-btn {
+  right: 100px;
+  font-size: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .brand-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-card {
+    width: 240px;
+    height: 240px;
+  }
+
+  .brand-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .brandName {
+    font-size: 1.3rem;
+  }
+
+  .brand-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-cards {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .brand-card {
+    width: 220px;
+    height: 220px;
+  }
+
+  .brand-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .brandName {
+    font-size: 1.2rem;
+  }
+
+  .brand-description {
+    font-size: 0.95rem;
+  }
+
+  .prev-btn,
+  .next-btn {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+/* Section Styling */
+.custom-products-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+/* Title */
+.custom-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Container */
+.custom-products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Product Card */
+.product-card {
+  background: #ffffff;
+  width: 200px;
+  height: 220px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+  /* New Continuous Animation */
+  animation: rotateScale 5s ease-in-out infinite;
+}
+
+/* Apply Different Delays */
+.product-card:nth-child(1) { animation-delay: 0s; }
+.product-card:nth-child(2) { animation-delay: 0.5s; }
+.product-card:nth-child(3) { animation-delay: 1s; }
+.product-card:nth-child(4) { animation-delay: 1.5s; }
+.product-card:nth-child(5) { animation-delay: 2s; }
+.product-card:nth-child(6) { animation-delay: 2.5s; }
+.product-card:nth-child(7) { animation-delay: 3s; }
+.product-card:nth-child(8) { animation-delay: 3.5s; }
+.product-card:nth-child(9) { animation-delay: 4s; }
+.product-card:nth-child(10) { animation-delay: 4.5s; }
+.product-card:nth-child(11) { animation-delay: 5s; }
+.product-card:nth-child(12) { animation-delay: 5.5s; }
+
+/* Hover Effect */
+.product-card:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007acc;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .custom-products-container {
+    justify-content: space-around;
+  }
+  .product-card {
+    width: 180px;
+    height: 200px;
+  }
+  .product-image {
+    width: 70px;
+    height: 70px;
+  }
+  .product-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-products-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .product-card {
+    width: 160px;
+    height: 180px;
+  }
+  .product-image {
+    width: 60px;
+    height: 60px;
+  }
+  .product-name {
+    font-size: 0.9rem;
+  }
+}
+
+/* Keyframes for Rotate & Scale Animation */
+@keyframes rotateScale {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-2deg);
+  }
+  75% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+
+
+
+/* Section Styling */
+.value-proposition {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+/* Title Styling */
+.vp-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for Value Proposition Cards */
+.vp-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual Cards */
+.vp-card {
+  background: #ffffff;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.vp-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.vp-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #ff6600;
+}
+
+/* Text Styling */
+.vp-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vp-container {
+    gap: 20px;
+  }
+
+  .vp-card {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+  }
+
+  .vp-icon {
+    font-size: 2rem;
+  }
+
+  .vp-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+  background: url("../images/gifting/contactgiftnew.JPG") center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.contact-section::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.contact-content {
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.contact-tagline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-btn {
+  background-color: #ffd700;
+  color: black;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-btn:hover {
+  background-color: #f7e47c;
+  transform: scale(1.05);
+}
