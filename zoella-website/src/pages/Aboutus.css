@@ -89,6 +89,7 @@
   .timeline-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -126,6 +127,7 @@
   .timeline-content p {
     font-size: 1.1rem;
     color: #555;
+    text-align: center;
   }
   
   /* Reveal Animation */
@@ -140,9 +142,9 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .timeline-line {
+    /* .timeline-line {
       left: 20px;
-    }
+    } */
   
     .timeline-item {
       width: 90%;
@@ -164,49 +166,116 @@
 
 
   
-  /* Core Values Section */
+ /* Core Values Section */
+.core-values {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0078d7, #002d62);
+  color: white;
+  text-align: center;
+}
+
+.core-values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.values-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Value Card */
+.value-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Icon Styling */
+.value-icon {
+  font-size: 3rem;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .core-values h2 {
+    font-size: 2rem;
+  }
+  .values-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .core-values {
-    padding: 80px 20px;
-    background: linear-gradient(to right, #0078d7, #002d62);
-    color: white;
-    text-align: center;
+    padding: 60px 15px;
   }
   
   .core-values h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
   }
-  
-  .values-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  
+
   .value-card {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 30px;
-    border-radius: 15px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .value-card:hover {
-    transform: translateY(-10px);
+    width: 90%; /* Adjusting width for better fit */
+    padding: 25px;
   }
   
   .value-icon {
-    font-size: 3rem;
-    color: #ffd700;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
   }
   
   .value-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
   }
+}
+
+@media (max-width: 480px) {
+  .core-values {
+    padding: 50px 10px;
+  }
+
+  .core-values h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .value-card {
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .value-icon {
+    font-size: 2rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
   
   /* Call-to-Action Section */
   .about-cta {

@@ -2,26 +2,47 @@ import React, { useEffect, useState } from "react";
 import "./CorporateGifting.css";
 import giftImage from "../images/gifting/occasiongift.jpg";
 
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination, Autoplay } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+import amazonpay from "../images/gifting/Amazon_Pay-Logo.wine.png"
+import threeM from "../images/gifting/3M_wordmark.svg.png"
+import voltas from "../images/gifting/voltas.jpg"
+import bluestar from "../images/gifting/bluestar.png"
+import samsung from "../images/gifting/Samsung_Logo.svg.png"
+import lg from "../images/gifting/LG_symbol.svg.png"
+import usha from "../images/gifting/USHA_Logo.pdf.jpg"
+import google from "../images/gifting/google.png"
+import amazon from "../images/gifting/amazon.png"
+import haier from "../images/gifting/haeir.png"
+import portronics from "../images/gifting/Portronics gadgets delhi.avif"
+import hitachi from "../images/gifting/Hitachi-logo.jpg"
+
+import bagpacks from "../images/gifting/bagpacks.jpg"
+import dryfruit from "../images/gifting/dryfruits.jpg"
+import keychain from "../images/gifting/keychains.jpg"
+import powerbank from "../images/gifting/powerbank.jpg"
+import sipper from "../images/gifting/sippers.jpg"
+import pendrive from "../images/gifting/pendrives.jpg"
+import stationery from "../images/gifting/pen.jpg"
+import tshirt from "../images/gifting/tshirt.jpg"
+import calender from "../images/gifting/diary.jpg"
+import wearables from "../images/gifting/wearables.jpg"
+import bluetooth from "../images/gifting/speakers.jpg"
+import kitchen from "../images/gifting/kitchenutility.jpg"
+
 
 
 const brands = [
-  { logo: "amazon.png", name: "Amazon Pay", description: "Gift Card for Purchase" },
-  { logo: "3m.png", name: "3M", description: "Safety Kit" },
-  { logo: "voltas.png", name: "Voltas", description: "Air Conditioner, Water Dispenser" },
-  { logo: "bluestar.png", name: "Blue Star", description: "Air Conditioner, Water Dispenser" },
-  { logo: "samsung.png", name: "Samsung", description: "Phones, Tablets, LED TV" },
-  { logo: "lg.png", name: "LG", description: "Microwave Oven, Refrigerator, LED TV" },
-  { logo: "usha.png", name: "Usha", description: "Fans, Induction, Irons" },
-  { logo: "google.png", name: "Google", description: "Google Home Mini" },
-  { logo: "amazon-alexa.png", name: "Amazon", description: "Amazon Alexa" },
-  { logo: "haier.png", name: "Haier", description: "Air Conditioner, Refrigerator" },
-  { logo: "portronics.png", name: "Portronics", description: "Speaker, Power Banks, USB Cables" },
-  { logo: "hitachi.png", name: "Hitachi", description: "Air Conditioner" },
+  { logo: amazonpay, name: "Amazon Pay", description: "Gift Card for Purchase" },
+  { logo: threeM, name: "3M", description: "Safety Kit" },
+  { logo: voltas, name: "Voltas", description: "Air Conditioner, Water Dispenser" },
+  { logo: bluestar, name: "Blue Star", description: "Air Conditioner, Water Dispenser" },
+  { logo: samsung, name: "Samsung", description: "Phones, Tablets, LED TV" },
+  { logo: lg, name: "LG", description: "Microwave Oven, Refrigerator, LED TV" },
+  { logo: usha, name: "Usha", description: "Fans, Induction, Irons" },
+  { logo: google, name: "Google", description: "Google Home Mini" },
+  { logo: amazon, name: "Amazon", description: "Amazon Alexa" },
+  { logo: haier, name: "Haier", description: "Air Conditioner, Refrigerator" },
+  { logo: portronics, name: "Portronics", description: "Speaker, Power Banks, USB Cables" },
+  { logo: hitachi, name: "Hitachi", description: "Air Conditioner" },
 ];
 
 
@@ -145,7 +166,7 @@ const CorporateGifting = () => {
         <div className="brand-cards">
           {brands.slice(currentIndex, currentIndex + cardsPerView).map((brand, index) => (
             <div key={index} className="brand-card">
-              <img src={`/images/${brand.logo}`} alt={brand.name} className="brand-logo" />
+              <img src={brand.logo} alt={brand.name} className="brand-logo" />
               <h3 className="brandName">{brand.name}</h3>
               <p className="brand-description">{brand.description}</p>
             </div>
@@ -163,51 +184,51 @@ const CorporateGifting = () => {
       <h2 className="custom-title">Customizable Non-Branded Products</h2>
       <div className="custom-products-container">
         <div className="product-card">
-          <img src="/images/backpack.png" alt="Backpacks, Laptop Bags, Luggage Bags" className="product-image" />
+          <img src={bagpacks} alt="Backpacks, Laptop Bags, Luggage Bags" className="product-image" />
           <p className="product-name">Backpacks, Laptop Bags, Luggage Bags</p>
         </div>
         <div className="product-card">
-          <img src="/images/dry-fruits.png" alt="Dry Fruits, Sweets" className="product-image" />
+          <img src={dryfruit} alt="Dry Fruits, Sweets" className="product-image" />
           <p className="product-name">Dry Fruits, Sweets</p>
         </div>
         <div className="product-card">
-          <img src="/images/keychain.png" alt="KeyChains" className="product-image" />
+          <img src={keychain} alt="KeyChains" className="product-image" />
           <p className="product-name">KeyChains</p>
         </div>
         <div className="product-card">
-          <img src="/images/power-bank.png" alt="Power Banks" className="product-image" />
+          <img src={powerbank} alt="Power Banks" className="product-image" />
           <p className="product-name">Power Banks</p>
         </div>
         <div className="product-card">
-          <img src="/images/sipper.png" alt="Sippers" className="product-image" />
+          <img src={sipper} alt="Sippers" className="product-image" />
           <p className="product-name">Sippers</p>
         </div>
         <div className="product-card">
-          <img src="/images/pen-drive.png" alt="Pen Drives, Hard Drives" className="product-image" />
+          <img src={pendrive} alt="Pen Drives, Hard Drives" className="product-image" />
           <p className="product-name">Pen Drives, Hard Drives</p>
         </div>
         <div className="product-card">
-          <img src="/images/stationery.png" alt="Pens, Stationery" className="product-image" />
+          <img src={stationery} alt="Pens, Stationery" className="product-image" />
           <p className="product-name">Pens, Stationery</p>
         </div>
         <div className="product-card">
-          <img src="/images/tshirt.png" alt="T-Shirts" className="product-image" />
+          <img src={tshirt} alt="T-Shirts" className="product-image" />
           <p className="product-name">T-Shirts</p>
         </div>
         <div className="product-card">
-          <img src="/images/calendar.png" alt="Calendar, Diary" className="product-image" />
+          <img src={calender} alt="Calendar, Diary" className="product-image" />
           <p className="product-name">Calendar, Diary</p>
         </div>
         <div className="product-card">
-          <img src="/images/wearables.png" alt="Wearables" className="product-image" />
+          <img src={wearables} alt="Wearables" className="product-image" />
           <p className="product-name">Wearables</p>
         </div>
         <div className="product-card">
-          <img src="/images/bluetooth.png" alt="Bluetooth Speakers" className="product-image" />
+          <img src={bluetooth} alt="Bluetooth Speakers" className="product-image" />
           <p className="product-name">Bluetooth Speakers</p>
         </div>
         <div className="product-card">
-          <img src="/images/kitchen.png" alt="Kitchen Utilities" className="product-image" />
+          <img src={kitchen} alt="Kitchen Utilities" className="product-image" />
           <p className="product-name">Kitchen Utilities</p>
         </div>
       </div>

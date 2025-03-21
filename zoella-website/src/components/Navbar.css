@@ -1,7 +1,7 @@
 /* Navbar Styles */
 
 body {
-  margin-top: 50px; /* Adjust based on navbar height */
+  margin-top: 50px; 
 }
 
 
@@ -14,60 +14,82 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #010154;
-  padding: 10px 0px;
+  padding: 20px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
-  
-  .navbar h1 {
-    color: white;
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding: 10px;
+.navbar h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+/* Navbar Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  padding-right: 30px;
+  margin: 0;
+
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #8b8bf9;
+}
+
+/* Responsive Navbar */
+@media (max-width: 1000px) {
+  .menu-icon {
+    display: block;
   }
-  
-  .navbar ul {
-    list-style: none;
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #010154;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:start;
+    width: 40%;
+    text-align: start;
+    padding: 15px;
+    display: none;
+  }
+
+  .nav-links.open {
     display: flex;
-    gap: 20px;
+  }
+
+  .nav-links li {
     padding: 10px;
-    margin: 0;
-    /* padding: 0; */
   }
-  
-  .navbar ul li {
-    display: inline;
+
+  .nav-links li a {
+    font-size: 1rem;
   }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar ul li a:hover {
-    color: #8b8bf9;
-  }
-  
-  /* Responsive Navbar */
-  @media (max-width: 1000px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-      padding: 15px;
-    }
-  
-    .navbar ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .navbar ul li a {
-      font-size: 1rem;
-    }
-  }
-  
+}

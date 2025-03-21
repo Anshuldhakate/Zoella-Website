@@ -37,10 +37,22 @@ const Footer = () => {
           </ul>
         </div>
 
+        <div className="footer-section">
+          <h3>Legal Links</h3>
+          <ul>
+            <li><Link to="/">Privacy Policy</Link></li>
+            <li><Link to="/">Terms and Conditions</Link></li>
+            <li><Link to="/">Terms of Use</Link></li>
+            <li><Link to="/">Refund Policy</Link></li>
+          </ul>
+        </div>
+
        
 
         {/* Social Media */}
 <div className="footer-section">
+  <a href=""><button className="footerbtn">Get in Touch</button></a>
+  
   <h3>Follow Us</h3>
   <div className="social-icons">
     <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
@@ -53,14 +65,14 @@ const Footer = () => {
 
 
          {/* Newsletter */}
-         <div className="footer-section">
+         {/* <div className="footer-section">
           <h3>Subscribe to Our Newsletter</h3>
           <p>Get updates on our latest offers, services, and corporate solutions.</p>
           <form className="newsletter-form">
             <input type="email" placeholder="Enter your email" required />
             <button type="submit">Subscribe</button>
           </form>
-        </div>
+        </div> */}
 
       </div>
 

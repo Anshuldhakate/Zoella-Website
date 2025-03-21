@@ -188,13 +188,6 @@ const Home = () => {
           <p>Reliable IT products to support your technological needs.</p>
         </div>
 
-        {/* <div className="service-card">
-          <div className="service-icon">
-            <FaMicroscope />
-          </div>
-          <h3>Measurement & Testing</h3>
-          <p>Advanced tools for accurate measurements and testing.</p>
-        </div> */}
       </div>
 
       <Link to="/services" className="view-all-btn">
@@ -325,7 +318,7 @@ const Home = () => {
             <div className="why-features">
               <div className="feature">
                 <FaBoxOpen className="feature-icon" />
-                <h3>20L+ Products</h3>
+                <h3>200+ Products</h3>
                 <p>Wide range of industrial supplies, office essentials, and gifting solutions.</p>
               </div>
               <div className="feature">
@@ -353,15 +346,15 @@ const Home = () => {
       
 
       {/* Contact Us Section */}
-<section className="contact-cta">
-  <div className="contact-container">
-    {/* Image Section */}
+{/* <section className="contact-cta">
+  <div className="contacts-container">
+
     <div className="contact-image">
       <img src={contact} alt="Contact Us" />
     </div>
 
-    {/* Form Section */}
-    <div className="contact-form">
+
+    <div className="contact-forms">
       <h2>Get in Touch</h2>
       <p>Have a question? Need a customized solution? Contact us today by filling out the form below.</p>
       <form>
@@ -381,7 +374,15 @@ const Home = () => {
       </form>
     </div>
   </div>
-</section>
+</section> */}
+
+
+<section className="home-cta">
+      <h2>"Expert Services, Unmatched Customer Experience"</h2>
+      <p>Your satisfaction is our mission—trust us to deliver excellence every time.</p>
+      <Link to="/contact" className="btn-home">Get in Touch</Link>
+    </section>
+
 
 
 
